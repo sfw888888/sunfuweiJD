@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#ffffff">
+    <CheckBox
+        android:id="@+id/check_child"
+        android:background="@drawable/select_checked"
+        android:layout_centerVertical="true"
+        android:button="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/image_child"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/check_child"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/textchild_title"
+        android:layout_toRightOf="@+id/image_child"
+        android:layout_alignTop="@+id/image_child"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:minLines="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textchild_price"
+        android:layout_toRightOf="@+id/image_child"
+        android:layout_alignBottom="@+id/image_child"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_toLeftOf="@+id/text_delete"
+        android:layout_alignBottom="@+id/text_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textchild_jian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jiajianxian"
+            android:padding="5dp"
+            android:text="－"/>
+        <TextView
+            android:id="@+id/text_shuliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jiajianxian"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="1"/>
+        <TextView
+            android:id="@+id/textchild_jia"
+            android:background="@drawable/jiajianxian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="＋"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_delete"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:background="#ff0000"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="删除"
+        />
+
+</RelativeLayout>

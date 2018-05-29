@@ -1,0 +1,6 @@
+<root>
+    <item
+        name='com.nostra13.universalimageloader.core.ImageLoader void loadImage(java.lang.String, com.nostra13.universalimageloader.core.listener.ImageLoadingListener)'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>
